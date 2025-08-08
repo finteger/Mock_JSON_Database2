@@ -1,13 +1,13 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 require('dotenv').config();
-const mongoose = require('require');
+import { connect } from 'require';
 const PORT = process.env.PORT;
 const uri = process.env.MONGO_URI;
 
 
 
-mongoose.connect(uri).then(
+connect(uri).then(
     async() =>{
 
         console.log('Connected to MongoDB.')
