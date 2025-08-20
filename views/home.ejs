@@ -49,4 +49,38 @@
 
     </body>
 
+    <script>
+        function updateUser(){
+
+            //grab the user form
+            const editUserForm = document.getElementById('editUserForm');
+            
+            //grabbing the id value from the input
+            const id = document.getElementById('edit_id').value;
+
+            //string interpolation to create new URL
+            editUserForm.action =  `/users/` + id + `/update`;
+
+            //submit the form
+            editUserForm.submit();
+        }
+
+         function deleteUser(){
+
+            //grab the user form
+            const deleteUserForm = document.getElementById('deleteUserForm');
+            
+            //grabbing the id value from the input
+            const id = document.getElementById('delete_id').value;
+
+            //string interpolation to create new URL
+            deleteUserForm.action =  `/users/` + id + `/delete`;
+
+            //submit the form
+            deleteUserForm.submit();
+        }
+
+
+    </script>
+
 </html>
