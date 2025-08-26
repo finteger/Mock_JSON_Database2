@@ -23,9 +23,18 @@ async function createUser(req, res) {
         email: req.body.email,
     }
 
+    //push the data to the memory object
+    data.users.push(userUser);
 
+    //write the updated data back to the file
+    await writeData(data);
+
+
+    res.status(201).send("User created successfully");
 
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
   }
 }
+
+module.exports = { createUser };
