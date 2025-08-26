@@ -1,9 +1,17 @@
 body{
     background: linear-gradient(to left, blue, lightblue);
+}
 
+.container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 form{
+    max-width: 250px;
     display: inline-block;
     text-align: left;
     border: 1px solid #ddd;
@@ -11,7 +19,7 @@ form{
     margin:10px;
     margin-top:30px;
     border-radius:5px;
-    box-shadow: 0 0 5px rgba(225, 225, 225, .15);
+    box-shadow: 5px 5px 9px #eee !important;
     backdrop-filter: blur(5px);
 }
 
@@ -37,7 +45,7 @@ form{
 
 h4{
     margin-top:10px;
-    width:100%;
+    width:fit-content;
     text-transform: uppercase;
     background: grey;
     font-size: 10px;
