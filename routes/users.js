@@ -4,7 +4,7 @@ const router = express.Router();
 
 //route handler for home page
 router.get("/home", (req, res) => {
-  res.ender("home");
+  res.render("home");
 });
 
 //api endpoint for exposing the resource
