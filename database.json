@@ -1,23 +1,28 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "John321",
-            "first_name": "John",
-            "email": "john@gmail.com"
-        },
-        {
-            "id": 2,
-            "username": "Janet32",
-            "first_name": "Janet",
-            "email": "Janet@gmail.com"
-        },
-        {
-            "id": 3,
-            "username": "Tarun321",
-            "first_name": "Tarun",
-            "email": "Tarun@gmail.com"
-        }
-    ]
-
+  "users": [
+    {
+      "id": 1,
+      "username": "John321",
+      "first_name": "John",
+      "email": "john@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "Janet32",
+      "first_name": "Janet",
+      "email": "Janet@gmail.com"
+    },
+    {
+      "id": 3,
+      "username": "Tarun321",
+      "first_name": "Tarun",
+      "email": "Tarun@gmail.com"
+    },
+    {
+      "id": 4,
+      "username": "tnash1",
+      "first_name": "Todd",
+      "email": "example@gmail.com"
+    }
+  ]
 }
